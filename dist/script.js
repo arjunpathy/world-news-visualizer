@@ -1203,7 +1203,8 @@ function loadData(cb) {
   ]
 
    // loading News
-  //  setTimeout(() => {  
+  
+  //   setTimeout(() => {  
   //   fetch(newsUrl).then(function (response) {
   //     // The API call was successful!
   //     return response.json();
@@ -1211,7 +1212,7 @@ function loadData(cb) {
   //     // This is the JSON from our response
       
   //     newsData = data.results
-  //     console.log(newsData);
+  //     console.log(newsData); 
 
 
   //   }).catch(function (err) {
@@ -1276,9 +1277,9 @@ let mouseclick = () =>{
     img_url = (item.image_url != null) ? item.image_url : 'https://nogalss.org/admin/assets/images/no-image2.png'
 
     html = `<div class="carousel-item ${activeClass}">`
-    html += `<div style="height: 50%; width: 60%;">`
+    html += `<div style="width: 60%;">`
     html += `<img src="${img_url}" class="d-block carImg" alt="..."></div>`
-    html += `<div class="carousel-caption d-none d-md-block">`
+    html += `<div style="width: 40%;"class="caption">`
     html += `<h5> ${item['title']}</h5>`
     html += `<p> ${item['description']}</p>`
     html += `</div></div>`
